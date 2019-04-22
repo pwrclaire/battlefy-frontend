@@ -86,8 +86,8 @@ import Button from 'react-bootstrap/Button';
       return (
         <ListGroup>{data.map(x => {
           return (
-            <ListGroupItem>
-              <MatchDetail key={x.gameId} data={x} summoner={this.state.summoner}/>
+            <ListGroupItem key={x.gameId} >
+              <MatchDetail data={x} summoner={this.state.summoner}/>
             </ListGroupItem>
           )
         })}</ListGroup>

@@ -94,11 +94,9 @@ class matchStats extends Component {
     let itemName = [];
     for(let i = 0; i <= 6; i++) {
         let itemN = `item${i}`;
-        // Not all players have 7 items..
-        if (matchStats[itemN]) {
+        // Checking for empty item
+        if (items.data[matchStats[itemN]] !== undefined) {
           matchStats[itemN] === 0 ? itemName.push('') : itemName.push(items.data[matchStats[itemN]].name)
-        } else {
-          continue;
         }
     }
     
