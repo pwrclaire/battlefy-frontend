@@ -1,5 +1,5 @@
 # League of Legends Stats
-Live: battlefy-frontend.herokuapp.com
+View live at: http://battlefy-frontend.herokuapp.com
 
 ## Local Installation
 
